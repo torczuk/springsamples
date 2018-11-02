@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f66e7d3f-1b59-4e64-b0b8-4e14e6246460" name="Default Changelist" comment="" />
+    <list default="true" id="f66e7d3f-1b59-4e64-b0b8-4e14e6246460" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/2-how-does-it-work/src/main/java/com/torczuk/github/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/2-how-does-it-work/src/main/java/com/torczuk/github/Application.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/1/target/" />
@@ -70,8 +72,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/2-how-does-it-work/src/main/java/com/torczuk/github/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+            <state relative-caret-position="210">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -223,6 +225,10 @@
           <expand>
             <path>
               <item name="springsamples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springsamples" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springsamples" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
@@ -367,13 +373,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2008547" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2008547" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" sideWeight="0.4993895" visible="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Terminal" sideWeight="0.4993895" visible="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Event Log" sideWeight="0.50061053" side_tool="true" visible="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -633,8 +640,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/2-how-does-it-work/src/main/java/com/torczuk/github/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

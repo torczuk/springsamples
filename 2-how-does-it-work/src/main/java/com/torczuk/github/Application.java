@@ -3,7 +3,6 @@ package com.torczuk.github;
 
 import org.springframework.stereotype.Component;
 
-import java.lang.annotation.Annotation;
 import java.util.HashMap;
 import java.util.Map;
 
