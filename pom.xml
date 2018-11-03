@@ -22,6 +22,7 @@
         <module>4-autowiring</module>
         <module>5-configuration</module>
         <module>6-multiple-instances</module>
+        <module>7-lazy</module>
     </modules>
 
     <dependencies>
