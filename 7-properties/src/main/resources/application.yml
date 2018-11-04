@@ -1,0 +1,7 @@
+driving:
+  limits:
+    speed:
+      max: 200
+  age:
+    min: 20
+    max: 80

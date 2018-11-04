@@ -22,9 +22,16 @@
         <module>4-autowiring</module>
         <module>5-configuration</module>
         <module>6-multiple-instances</module>
-        <module>7-lazy</module>
-        <module>8-aop</module>
-        <module>9-boot-helloworld</module>
+        <module>7-properties</module>
+        <module>8-lazy</module>
+        <module>9-aop</module>
+        <module>10-data</module>
+        <module>11-data</module>
+        <module>12-data-query</module>
+        <module>13-cache</module>
+        <module>14-rest-helloworld</module>
+        <module>15-rest</module>
+        <!--<module>16-json</module>-->
     </modules>
 
     <dependencies>
