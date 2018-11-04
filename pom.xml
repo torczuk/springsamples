@@ -23,6 +23,8 @@
         <module>5-configuration</module>
         <module>6-multiple-instances</module>
         <module>7-lazy</module>
+        <module>8-aop</module>
+        <module>9-boot-helloworld</module>
     </modules>
 
     <dependencies>

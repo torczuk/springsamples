@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
-import org.springframework.core.annotation.AliasFor;
 
 @Configuration
 public class Config {
@@ -21,4 +20,9 @@ public class Config {
         return new Car(new Engine(120));
     }
 
+    @Bean
+    @Primary
+    public Car slow(Engine engine) {
+        return new Car(engine);
+    }
 }

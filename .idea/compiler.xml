@@ -8,6 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="1-helloworld" />
         <module name="2-how-does-it-work" />
+        <module name="3-getting-bean" />
+        <module name="4-autowiring" />
+        <module name="5-configuration" />
+        <module name="6-multiple-instances" />
+        <module name="7-lazy" />
+        <module name="8-aop" />
+        <module name="9-boot-helloworld" />
       </profile>
     </annotationProcessing>
   </component>
