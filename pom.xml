@@ -31,7 +31,7 @@
         <module>13-cache</module>
         <module>14-rest-helloworld</module>
         <module>15-rest</module>
-        <!--<module>16-json</module>-->
+        <module>16-json</module>
     </modules>
 
     <dependencies>

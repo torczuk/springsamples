@@ -8,7 +8,10 @@ import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import static com.jayway.jsonpath.matchers.JsonPathMatchers.hasJsonPath;
+import static com.jayway.jsonpath.matchers.JsonPathMatchers.hasNoJsonPath;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
@@ -21,9 +24,12 @@ public class AppControllerTest {
     private TestRestTemplate restTemplate;
 
     @Test
-    public void greetingShouldReturnDefaultMessage() {
-        String response = restTemplate.getForObject("http://localhost:" + port + "/api/v1/driver", String.class);
+    public void shouldGetDriverById() {
+        String response = restTemplate.getForObject("http://localhost:" + port + "/api/v1/driver/1", String.class);
 
-        assertThat(response).isEqualTo("hello I am your driver");
+        assertThat(response, hasJsonPath("$.first_name", equalTo("Michael")));
+        assertThat(response, hasJsonPath("$.date_of_birth", equalTo("1970-05-01")));
+        assertThat(response, hasNoJsonPath("$.password"));
+        assertThat(response, hasNoJsonPath("$.introduce"));
     }
 }
