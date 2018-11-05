@@ -7,15 +7,25 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="1-helloworld" />
+        <module name="10-data" />
+        <module name="11-data" />
+        <module name="12-data-query" />
+        <module name="13-cache" />
+        <module name="14-rest-helloworld" />
+        <module name="15-rest" />
+        <module name="16-json" />
         <module name="2-how-does-it-work" />
         <module name="3-getting-bean" />
         <module name="4-autowiring" />
         <module name="5-configuration" />
         <module name="6-multiple-instances" />
-        <module name="7-lazy" />
-        <module name="8-aop" />
-        <module name="9-boot-helloworld" />
+        <module name="7-properties" />
+        <module name="8-lazy" />
+        <module name="9-aop" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="10-rest" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

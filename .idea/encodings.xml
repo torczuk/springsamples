@@ -3,13 +3,21 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/1-helloworld" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/10-data" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/10-rest" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/11-data" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/12-data-query" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/13-cache" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/14-rest-helloworld" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/15-rest" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/16-json" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/2-how-does-it-work" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/3-getting-bean" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/4-autowiring" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/5-configuration" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/6-multiple-instances" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/7-lazy" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/8-aop" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/9-boot-helloworld" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/7-properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/8-lazy" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/9-aop" charset="UTF-8" />
   </component>
 </project>
