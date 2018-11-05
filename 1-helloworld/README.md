@@ -20,8 +20,8 @@ ClassPathScanningCandidateComponentProvider.registerDefaultFilters(..)
 
 
 ### Exercise
-1. change `@Component`  to `@Repository`, `@Service`, `@Controller`, is it any difference?
-2. create breakpoint in methods and constructor, run the code
+1. change `@Component` to `@Repository`, `@Service`, `@Controller`, is it any difference?
+2. create breakpoint in `HelloWorld` constructor, run the code
 
 ### Answers
 1. [stack overflow](https://stackoverflow.com/questions/6827752/whats-the-difference-between-component-repository-service-annotations-in)
