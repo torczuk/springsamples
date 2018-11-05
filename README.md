@@ -38,7 +38,10 @@ model for modern Java-based enterprise applications - on any kind of deployment 
 
 #### Tips
 
-
+##### How to list all beans?
+```java
+Arrays.stream(ctx.getBeanDefinitionNames()).forEach(System.out::println);
+```
 
 #### If you would like to explore more
 
