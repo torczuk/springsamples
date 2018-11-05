@@ -36,6 +36,12 @@ model for modern Java-based enterprise applications - on any kind of deployment 
 
 [Reference]( https://spring.io/projects/spring-framework)
 
+#### Criticism
+
+http://samatkinson.com/why-i-hate-spring/
+
+To many magics? Is it better to not use it, or maybe understand the *magic* ?
+
 #### Tips
 
 ##### How to list all beans?
