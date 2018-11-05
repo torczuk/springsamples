@@ -14,7 +14,6 @@ public class Application {
         Bike byClass = ctx.getBean(Bike.class);
         Bike byName = (Bike) ctx.getBean("bike");
         Vehicle byInterface = ctx.getBean(Vehicle.class);
-        ctx.getBean("anotherBike");
 
         System.out.println("Are bikes the same? :" + (byClass == byName));
         byInterface.drive();
