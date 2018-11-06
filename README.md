@@ -40,13 +40,22 @@ model for modern Java-based enterprise applications - on any kind of deployment 
 
 http://samatkinson.com/why-i-hate-spring/
 
-To many magics? Is it better to not use it, or maybe understand the *magic* ?
+To many magics? Is it better to not use it, or maybe understand?
 
 #### Tips
 
-##### How to list all beans?
+##### 1. How to list all beans?
 ```java
 Arrays.stream(ctx.getBeanDefinitionNames()).forEach(System.out::println);
+```
+
+#### 2. Always autowire using constructor args and final fields
+```java
+
+private final Engine engine;
+
+Car(Engine engine) {
+}
 ```
 
 #### If you would like to explore more
