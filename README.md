@@ -27,7 +27,7 @@ Spring is a portfolio of projects that includes
 * spring for android
 * ...
 
-and one of them is Spring Framework
+many [others](https://spring.io/docs/reference) and one of them is Spring Framework
 
 ```
 The Spring Framework provides a comprehensive programming and configuration
@@ -35,6 +35,7 @@ model for modern Java-based enterprise applications - on any kind of deployment 
 ```
 
 [Reference]( https://spring.io/projects/spring-framework)
+
 
 #### Criticism
 
@@ -49,7 +50,7 @@ To many magics? Is it better to not use it, or maybe understand?
 Arrays.stream(ctx.getBeanDefinitionNames()).forEach(System.out::println);
 ```
 
-#### 2. Always autowire using constructor args and final fields
+##### 2. Always autowire using constructor args and final fields
 ```java
 
 private final Engine engine;
