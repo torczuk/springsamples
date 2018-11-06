@@ -11,7 +11,12 @@ public class Car implements Vehicle {
 
     @Autowired// try to remove
     public Car(@Autowired Engine engine) { // try to remove
+        System.out.println("by args constructor");
         this.engine = engine;
+    }
+
+    public Car() {
+        System.out.println("by no-args constructor");
     }
 
     @Override
@@ -22,8 +27,9 @@ public class Car implements Vehicle {
         return engine.hpPower() > 200;
     }
 
-    @Autowired // try to remove
+    @Autowired
     public void setEngine(Engine engine) {
+        System.out.println("by setter");
         this.engine = engine;
     }
 }

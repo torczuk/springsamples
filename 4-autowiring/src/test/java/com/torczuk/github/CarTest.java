@@ -19,8 +19,12 @@ public class CarTest {
     @Autowired
     private Vehicle vehicle;
 
+    @Autowired
+    private Car car;
+
     @Autowired(required = false)
-    private String thisBeanDoesNotExist;
+    private String nonExisting;
+
 
     @Test
     public void shouldAutowireAppContext() {
@@ -34,6 +38,11 @@ public class CarTest {
 
     @Test
     public void shouldNotAutowireNonExistingBean() {
-        assertThat(thisBeanDoesNotExist).isNull();
+        assertThat(nonExisting).isNull();
+    }
+
+    @Test
+    public void shouldAutowireCar() {
+        assertThat(car).isNotNull();
     }
 }
