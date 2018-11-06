@@ -9,20 +9,19 @@ import org.springframework.context.annotation.Primary;
 public class Config {
 
     @Bean
-    @Qualifier("mercedes")
+//    @Qualifier("mercedes")
     public Car fast() {
         return new Car(new Engine(150));
     }
 
     @Bean
-    @Qualifier("seat")
+//    @Qualifier("seat")
     public Car slow() {
         return new Car(new Engine(120));
     }
 
     @Bean
-    @Primary
-    public Car slow(Engine engine) {
+    public Car any(Engine engine) {
         return new Car(engine);
     }
 }

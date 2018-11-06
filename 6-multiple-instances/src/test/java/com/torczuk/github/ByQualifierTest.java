@@ -19,7 +19,7 @@ public class ByQualifierTest {
 
     @Test
     public void autowireMercedesByQualifier() {
-        assertThat(someCar); //is ..
+        assertThat(someCar).isNotNull();
     }
 
 }

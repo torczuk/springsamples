@@ -17,6 +17,6 @@ public class ByTypeTest {
 
     @Test
     public void autowireCar() {
-        assertThat(car).isNotNull(); //.is ..
+        assertThat(car).isNotNull();
     }
 }

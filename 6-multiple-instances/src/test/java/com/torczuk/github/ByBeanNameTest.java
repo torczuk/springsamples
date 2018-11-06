@@ -17,6 +17,6 @@ public class ByBeanNameTest {
 
     @Test
     public void autowireMercedesByName() {
-        assertThat(mercedes); // is ...s
+        assertThat(mercedes).isNotNull();
     }
 }

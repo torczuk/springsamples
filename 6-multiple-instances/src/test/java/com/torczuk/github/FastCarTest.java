@@ -17,7 +17,7 @@ public class FastCarTest {
 
     @Test
     public void autowireFast() {
-        assertThat(fast).isNotNull(); //.is ..
+        assertThat(fast).isNotNull();
     }
 
 }

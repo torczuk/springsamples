@@ -19,6 +19,6 @@ public class BeanInQualifierCarTest {
 
     @Test
     public void autowireSlowByQualifier() {
-        assertThat(another); // is ...
+        assertThat(another).isNotNull();
     }
 }

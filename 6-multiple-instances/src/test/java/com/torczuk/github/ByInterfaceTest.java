@@ -1,6 +1,5 @@
 package com.torczuk.github;
 
-import org.assertj.core.api.Assertions;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +17,7 @@ public class ByInterfaceTest {
 
     @Test
     public void autowireVehicle() {
-        assertThat(vehicle).isNull(); //.is ..
+        assertThat(vehicle).isNotNull();
     }
 
 }
