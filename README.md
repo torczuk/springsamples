@@ -1,4 +1,4 @@
-#### How did Spring change over 16 years?
+### How did Spring change over 16 years?
 
 First release 1st October 2002
 
@@ -37,13 +37,13 @@ model for modern Java-based enterprise applications - on any kind of deployment 
 [Reference]( https://spring.io/projects/spring-framework)
 
 
-#### Criticism
+### Criticism
 
 http://samatkinson.com/why-i-hate-spring/
 
 To many magics? Is it better to not use it, or maybe understand?
 
-#### Tips
+### Tips
 
 ##### 1. How to list all beans?
 ```java
@@ -59,7 +59,23 @@ Car(Engine engine) {
 }
 ```
 
-#### If you would like to explore more
+##### 3. How to see all dependencies
+```
+./mvnw dependency:tree --projects module-name
+```
+
+##### 4. How to pass command line parameter to Spring Boot
+`1.x` version
+```
+mvnw spring-boot:run -Drun.arguments=--server.port=8081
+```
+
+`2.x` version
+```
+mvnw spring-boot:run -Dspring-boot.run.arguments=--server.port=8081
+```
+
+### If you would like to explore more
 
 [Spring Magic](https://content.pivotal.io/springone-platform-2017/its-a-kind-of-magic-under-the-covers-of-spring-boot-brian-clozel-st%C3%A9phane-nicoll)
 
