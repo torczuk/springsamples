@@ -43,4 +43,6 @@ mvnw spring-boot:run -Dspring-boot.run.arguments=--server.port=8081
 ```
 
 ### Exercise
-Fix `OverridePropertyTest`
+1. Fix `OverridePropertyTest`
+
+2. How to represent list in `*.properties`?
