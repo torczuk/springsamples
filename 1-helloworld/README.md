@@ -1,8 +1,10 @@
 ### Description
+
 Run the example and take a look at the log
 
 Two important things here `@SpringBootApplication` and `@Component`
 
+List of all dependencies for this module
 
 Go back after `2-how-does-it-work`
 
