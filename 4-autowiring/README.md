@@ -69,3 +69,9 @@ How does autowire work? [Answer](https://docs.spring.io/spring/docs/5.1.2.RELEAS
         this.changedEngine = engine;
     }
 ```
+
+### Questions
+
+(Q): Is it possible to inject Singleton into Prototype?
+
+(Q): Is it possible to inject Prototype into Singleton? (we will cover this after `9-aop`)
