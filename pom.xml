@@ -20,6 +20,7 @@
         <module>2-how-does-it-work</module>
         <module>3-getting-bean</module>
         <module>4-autowiring</module>
+        <module>4a-lifecycle</module>
         <module>5-configuration</module>
         <module>6-multiple-instances</module>
         <module>7-properties</module>
