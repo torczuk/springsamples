@@ -1,2 +1,4 @@
-limits:
-  max-speed: 100
+driving:
+  limits:
+    speed:
+      max: 100
