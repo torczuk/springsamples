@@ -4,6 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
+import java.util.UUID;
+
 @Component
 public class Car implements Vehicle {
 
@@ -17,5 +19,9 @@ public class Car implements Vehicle {
 
     public void switchLight() {
         System.out.println("Lights on");
+    }
+
+    public String serialNumber() {
+        return UUID.randomUUID().toString();
     }
 }
