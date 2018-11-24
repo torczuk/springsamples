@@ -35,6 +35,22 @@ public class DriverRepositoryTest {
 
         assertThat(result)
                 .hasSize(1)
-                .contains(new Driver("S. Vettel", new Address("Munich")));
+                .contains(new Driver("S. Vettl", new Address("Munich")));
+    }
+
+    @Test
+    public void shouldFindTopLevelDriver() {
+        List<Driver> result = driverRepository.findTopDriver();
+
+        assertThat(result)
+                .hasSize(1)
+                .contains(new Driver("M Schumacher", new Address("Berlin")));
+    }
+
+
+    @Test
+    public void shouldFindTopLevelDriver2() {
+        List<String> integers = driverRepository.findDriverWhereNameLengthIsGraterThan(2);
+
     }
 }

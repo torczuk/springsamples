@@ -4,7 +4,6 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.BeanCreationException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
@@ -23,5 +22,10 @@ public class CarTest {
     public void shouldNotWorkCauseEngineIsBroken() {
         expectedException.expect(IllegalStateException.class);
         car.drive();
+    }
+
+    @Test
+    public void shouldMonitorAccessToCar() {
+        car.serialNumber();
     }
 }
