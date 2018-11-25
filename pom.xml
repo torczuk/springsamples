@@ -33,6 +33,7 @@
         <module>14-rest-helloworld</module>
         <module>15-rest</module>
         <module>16-json</module>
+        <module>17-exceptions</module>
     </modules>
 
     <dependencies>
