@@ -17,6 +17,7 @@
         <module name="2-how-does-it-work" />
         <module name="3-getting-bean" />
         <module name="4-autowiring" />
+        <module name="4a-lifecycle" />
         <module name="5-configuration" />
         <module name="6-multiple-instances" />
         <module name="7-properties" />

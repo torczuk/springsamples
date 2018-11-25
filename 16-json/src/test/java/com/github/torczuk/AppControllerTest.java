@@ -1,11 +1,14 @@
 package com.github.torczuk;
 
+import org.assertj.core.api.Assertions;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.web.server.LocalServerPort;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import static com.jayway.jsonpath.matchers.JsonPathMatchers.hasJsonPath;
@@ -31,5 +34,20 @@ public class AppControllerTest {
         assertThat(response, hasJsonPath("$.date_of_birth", equalTo("1970-05-01")));
         assertThat(response, hasNoJsonPath("$.password"));
         assertThat(response, hasNoJsonPath("$.introduce"));
+    }
+
+    @Test
+    public void shouldResponseWith200ForExistingDriver() {
+        ResponseEntity<Driver> response = restTemplate.getForEntity("http://localhost:" + port + "/api/v1/driver/1", Driver.class);
+
+        Assertions.assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
+        Assertions.assertThat(response.getHeaders()).containsKeys("ETag");
+    }
+
+    @Test
+    public void shouldResponseWith404WhenDriverCanNotBeFound() {
+        ResponseEntity<Driver> response = restTemplate.getForEntity("http://localhost:" + port + "/api/v1/driver/2", Driver.class);
+
+        Assertions.assertThat(response.getStatusCode()).isEqualTo(HttpStatus.NOT_FOUND);
     }
 }
