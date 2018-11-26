@@ -36,5 +36,4 @@ public class DriverRepositoryTest {
 
         assertThat(driverRepository.findAll()).doesNotContain(driver);
     }
-
 }

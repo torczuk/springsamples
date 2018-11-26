@@ -23,6 +23,21 @@ class HibernateJpaConfiguration {
 ```
 
 
+What does it mean?
+Below properties are mapped to `DataSourceProperties`
+```
+spring:
+  datasource:
+    url: jdbc:h2:mem:appdb
+    username: appuser
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    database-platform: org.hibernate.dialect.H2Dialect
+```
+
 Couple of words about
 * jdbc
 
@@ -67,9 +82,17 @@ try{
 * hibernate (first release 23 May 2001)
 * jpa (first release 11 May 2006)
 
-what kind of object `*Repository` is?
+### Will jpa solve all your problems?
 
+* Lazy initialization
+* Proxies
+
+### Questions
+what kind of object `*Repository` is?
 
 ### Exercise
 
 Add `DrivingLicence` entity and join it with `Driver`
+
+### More reading
+[All jpa annotations](https://docs.oracle.com/javaee/7/api/javax/persistence/package-summary.html)

@@ -2,6 +2,8 @@ package com.torczuk.github.domain;
 
 import java.util.Objects;
 
+
+//NO @ENTITY HERE!
 public class Address {
 
     private String city;
