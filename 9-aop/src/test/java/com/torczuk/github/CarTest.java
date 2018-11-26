@@ -1,5 +1,6 @@
 package com.torczuk.github;
 
+import org.assertj.core.api.Assertions;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
@@ -26,6 +27,15 @@ public class CarTest {
 
     @Test
     public void shouldMonitorAccessToCar() {
-        car.serialNumber();
+        String serialNumber = car.serialNumber();
+
+        Assertions.assertThat(serialNumber).isNotNull();
+    }
+
+    @Test
+    public void shouldUserProxyInsteadOfRealClass() {
+        //because of @EnableAspectJAutoProxy(proxyTargetClass = true)
+        //put breakpoint here and take a look of car properties
+        Assertions.assertThat(car.getClass()).isNotEqualTo(Car.class);
     }
 }

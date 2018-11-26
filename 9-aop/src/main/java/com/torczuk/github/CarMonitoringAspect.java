@@ -42,8 +42,8 @@ public class CarMonitoringAspect {
         System.out.println("After getting value: " + result);
     }
 
-    @Before("execution(public * *(..))")
-    public void anyPublicMethod(JoinPoint joinPoint) {
-        System.out.println("Running method: " + joinPoint.getSignature().getName() + " in " + joinPoint.getTarget().getClass());
-    }
+//    @Before("execution(public * *(..))")
+//    public void anyPublicMethod(JoinPoint joinPoint) {
+//        System.out.println("Running method: " + joinPoint.getSignature().getName() + " in " + joinPoint.getTarget().getClass());
+//    }
 }
